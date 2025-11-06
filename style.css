@@ -1,0 +1,305 @@
+
+@import url('https://fonts.cdnfonts.com/css/br-cobane');
+@import url('https://fonts.cdnfonts.com/css/lt-eyesight');
+@import url('https://fonts.cdnfonts.com/css/air-black');
+@import url('https://fonts.cdnfonts.com/css/druk-trial');
+ @import url('https://fonts.cdnfonts.com/css/druk-wide-bold');
+@import url('https://fonts.cdnfonts.com/css/typeface-mario-world-pixel-filled');
+@import url('https://fonts.cdnfonts.com/css/pixel-freaks');
+ @import url('https://fonts.cdnfonts.com/css/m23-hydrant-special'); 
+ @import url('https://fonts.cdnfonts.com/css/denne-delica');
+ /* for the body */
+ @import url('https://fonts.cdnfonts.com/css/folklore');
+   @import url('https://fonts.cdnfonts.com/css/monster-friend-back');
+  @import url('https://fonts.cdnfonts.com/css/sheko-personal-use-only');
+         @import url('https://fonts.cdnfonts.com/css/maxtune');
+                @import url('https://fonts.cdnfonts.com/css/sigmar');
+
+                
+   @import url('https://fonts.cdnfonts.com/css/rubik-2');  
+   @import url('https://fonts.cdnfonts.com/css/emotional-baggage');
+@import url('https://fonts.cdnfonts.com/css/paralucent-heavy');
+
+ /* font-family: 'M23_HYDRANT SPECIAL', sans-serif; */
+/* font-family: 'Druk Trial', sans-serif; */
+/* font-family: 'BR Cobane', sans-serif; */                                               
+/* 'LT Eyesight', sans-serif; */
+/* font-family: 'Air-Heavy', sans-serif; */
+ /* font-family: 'Druk Wide Bold', sans-serif; */
+ /* font-family: 'Typeface Mario World Pixel Filled', sans-serif; */
+ /* font-family: 'Typeface Mario World Pixel Outline', sans-serif; */
+/* font-family: 'Denne Delica', sans-serif; body 
+  font-family: 'Folklore', sans-serif; */
+ /* font-family: 'Monster Friend Back', sans-serif;
+  font-family: 'Monster Friend Fore', sans-serif; */
+  /* font-family: 'Paralucent-Heavy', sans-serif; */
+                                                
+    
+  
+
+
+
+
+
+
+
+
+  
+    .button {
+  display: inline-block;
+  margin-bottom: 20em;
+  background: hotpink;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;}
+
+.button:hover {
+  background: #ff69b4aa;
+}
+                                            
+
+
+
+
+html,
+body {
+	margin: auto;
+	padding: 3;
+		background-color: rgb(255, 109, 189);
+    background-size: 200vh;
+    z-index: -1;
+    height: 240vh;
+}
+
+
+canvas { 
+  height: 200vh;
+  overflow: visible;
+  width: 200em;
+	position: absolute;
+	top: 0em;
+	bottom: 10em;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+
+
+p{  
+  font-family: 'Rubik', sans-serif;
+background-color: rgb(255, 250, 228);
+border-radius: 3em;
+border-width: 50%;
+padding: 3em;
+  backdrop-filter: blur(15px);
+	text-align: center;
+	line-height: 2;
+  letter-spacing: 1;
+  width: 15%;
+  color: rgb(0, 0, 0);
+    position: absolute;
+    display: inline-block;
+    height: fit-content;
+    position: absolute;
+    left: 34em;
+    top: 52em;
+  animation: blurColorMorph 1s linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% exit 100%;
+}
+
+@keyframes blurColorMorph {
+  0% {
+    opacity: 0;
+    filter: blur(15px);
+    transform: scale(0.5);
+    background-color: rgba(255, 250, 228, 0.3);
+    border-radius: 3em;
+  }
+
+  20% {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+    background-color: rgb(255, 250, 226);
+    border-radius: 3em;
+  }
+
+  40% {
+    transform: scale(1.05);
+    background-color: rgb(255, 251, 236);
+    border-radius: 2em;
+  }
+
+  /* turns black + circular quickly */
+  60% {
+    transform: scale(1);
+    background-color: rgb(255, 251, 236);
+    border-radius: 2em;
+  }
+
+  70% {
+    transform: scale(0.5);
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.4);
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    transform: translateY(30em);
+  }
+}
+
+
+h1{
+text-shadow:
+    1px 1px 1px rgb(0, 0, 0),
+    1px 2px 1px rgb(255, 255, 44);
+	color: rgb(18, 17, 17);
+font-family: 'Paralucent-Heavy', sans-serif;                                      
+ font-size: 180px;
+ overflow: hidden; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: 3px;
+position: absolute;
+left: 1em ;
+top: 1em;
+text-align: center;
+z-index: 5;
+
+}
+
+
+
+.cart-button img { 
+  height: auto;
+  width: 40px;
+  position: absolute;
+  top:97em;
+left: 44em;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  cursor: pointer;
+}
+
+
+.cart-button img:hover {
+  transform: scale(2.1) rotate(-360deg);   
+  filter: brightness(2);  
+}
+
+
+
+/* h3{
+position: absolute;
+top:40em;
+left: 19.2em;
+font-size: 35px;
+color: #ff4eca;
+font-family: 'Druk Wide Bold', sans-serif;
+animation:translateY 3s infinite alternate ease-in-out;
+ animation-name:slide-right;
+border: none;
+cursor: pointer;
+transition: hotpink 0.3s ease;
+} */
+
+h3:hover{
+
+color: #00d36d;
+
+}
+@keyframes slide-right{
+  
+  0%{
+    transform:translateY(0%);
+  }
+  100%{
+    transform:translateY(60%);
+  }
+  
+}
+
+.rotate{
+    margin-top:4em;
+  width: fit-content;
+/*   height:200px; */
+animation:rotate 2s linear infinite;
+
+}
+
+@keyframes rotate{
+  0%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+}
+
+.shop{
+ position: absolute;
+top:80em;
+left: 27.5em;
+background-color: #F5EC6E;
+width: 35em;
+height:35em;
+border-radius: 50em;
+}
+
+.buy{
+display: flex;
+justify-content: center;
+align-content:center;
+background-color: black;
+position: absolute;
+top:82.5em;
+left: 30em;
+ width: 30em;
+height: 30em;
+border-radius: 50em;
+animation:scale 2s infinite alternate ease-in-out;
+  animation-name:grow-shrink;
+}
+
+@keyframes grow-shrink{
+  
+  0%{transform:scale(70%)
+  }
+  100%{transform:scale(100%)
+  }}
+  
+
+
+#myAudio {
+  position: sticky;
+  top: 1em;
+  width: 30%;
+margin-top: 1em;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 7em;
+  padding: 7px;
+  z-index: 5;
+  margin-left: 60em;
+
+}
+
+#myAudio::-webkit-media-controls-play-button {
+  background-color: #0080ff;
+  border-radius: 70%;
+  padding: 3px;
+}
+
+#myAudio::-webkit-media-controls-timeline {
+  background-color: #ffd000;
+  border-radius: 5em;
+  width: 15em;
+}
+
+
